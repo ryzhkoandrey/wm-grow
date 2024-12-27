@@ -40,9 +40,16 @@ body {
     height: 100%;
 }
 
+.slider__item {
+    overflow: hidden;
+    transform: scale(1.25) !important;
+    transition: 2s ease !important;
+}
+
 .slider__layer {
     position: absolute;
     inset: 0;
     background-size: cover;
     background-position: center;
+    will-change: transform;
 }
