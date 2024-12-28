@@ -13,7 +13,7 @@ html,
 body {
     height: 100%;
     background-color: #2B474B;
-    color: #fff;
+    color: var(--white-color);
 }
 
 @font-face {
@@ -70,4 +70,32 @@ body {
     position: absolute;
     z-index: 10;
     inset: 0;
+}
+
+.top-line {
+    padding: 3.2em 0;
+}
+
+.logo {
+    display: block;
+}
+
+.logo img {
+    display: block;
+    width: 15.5em;
+}
+
+.main-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.main-menu li > * {
+    color: var(--gray-color);
+}
+
+.button {
+    padding: 1em 2em;
+    color: var(--white-color);
+    background-color: var(--green-color);
 }
