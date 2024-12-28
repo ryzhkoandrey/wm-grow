@@ -92,6 +92,44 @@ body {
 
 .main-menu li > * {
     color: var(--gray-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.725em;
+    letter-spacing: 0.25em;
+    position: relative;
+    transition: all .2s;
+}
+
+.main-menu li.active > *,
+.main-menu li:hover > * {
+    color: #fff;
+}
+
+.main-menu li > *::before,
+.main-menu li > *::after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    background-color: var(--green-color);
+    width: 11.25px;
+    vertical-align: middle;
+    top: -1px;
+    left: -1.5px;
+    position: relative;
+    border-radius: 10em;
+    margin: 0 7.25px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.main-menu li.active > *::before,
+.main-menu li.active > *::after,
+.main-menu li:hover > *::before,
+.main-menu li:hover > *::after {
+    visibility: visible;
+    opacity: 1;
 }
 
 .button {
