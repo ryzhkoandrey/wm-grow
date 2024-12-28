@@ -5,12 +5,15 @@
 }
 
 .container {
-	max-width: var(--grid-with);
+	max-width: calc(var(--grid-with) + var(--grid-gutter) * 2);
+	min-width: calc(320px + var(--grid-gutter) * 2);
+	padding: 0 var(--grid-gutter);
 	margin: auto;
 }
 
 .row {
 	display: flex;
+	margin: 0 calc(var(--grid-gutter) * -1);
 }
 
 .col {

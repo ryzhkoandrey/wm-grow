@@ -95,7 +95,31 @@ body {
 }
 
 .button {
-    padding: 1em 2em;
+    padding: 1.05em 2.6em;
     color: var(--white-color);
+    background-color: var(--green-color);
+    border: 1.5px solid transparent;
+    border-radius: 10em 0 10em 10em;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .21em;
+    text-transform: uppercase;
+    font-size: 0.65em;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.button:hover {
+    background-color: transparent;
+    border-color: var(--green-color);
+}
+
+.button--top {
+    background-color: transparent;
+    border-color: var(--green-color);
+    margin: 0 2em 0 3em;
+}
+
+.button--top:hover {
     background-color: var(--green-color);
 }
