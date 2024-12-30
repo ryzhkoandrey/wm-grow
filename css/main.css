@@ -160,6 +160,11 @@ body {
     background-color: var(--green-color);
 }
 
+.button--main {
+    margin-top: 3em;
+    padding: 1.6em 3.5em;
+}
+
 .submenu {
     --anim-menu-btn-color: var(--gray-color);
     --anim-menu-btn-gap: 0.195em;
@@ -238,4 +243,15 @@ body {
 .header-content__slide:has(* + .active .header-content__info),
 .header-content__slide.active + * .header-content__info {
     top: 18em;
+}
+
+.slider-ui {
+    pointer-events: none;
+}
+
+.logo,
+.main-menu,
+.button,
+.submenu {
+    pointer-events: all;
 }
